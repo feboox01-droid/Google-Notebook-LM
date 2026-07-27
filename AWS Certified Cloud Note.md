@@ -1,52 +1,369 @@
-Ye raha aapka 5-day "AWS Crash Course" plan based on the source material:
+<p align="center">
+  <img src="assets/aws-banner.png" width="100%">
+</p>
 
-#Day 1: Cloud Concepts aur Global Infrastructure
-Introduction: Sabse pehle samjhein ki cloud computing kya hai aur ye on-premise se kaise behtar hai
-.
-Cloud Deployment Models: Public, Private, Hybrid, aur Multicloud models ke baare mein jaanein
-.
-Global Infrastructure: AWS ke Regions aur Availability Zones (AZs) ko samjhein
-. Yaad rakhein ki US-East-1 sabse purana aur popular region hai jahan naye services pehle aate hain
-.
-Benefits of Cloud: Agility, cost-effectiveness, aur scalability jaise 7 advantages ko yaad karein
-.
 
-#Day 2: AWS Core Services — Compute aur Storage
-Compute: EC2 (Virtual Machines), Lambda (Serverless functions), aur containers (ECS/EKS) ke beech ka farq samjhein
-.
-Storage: S3 (Object storage) flagship service hai
-. Iske saath EBS (Virtual hard drives) aur EFS (Shared file system) ke use cases ko cover karein
-.
-Hands-on: Ek S3 bucket banayein aur usmein files upload karne ki practice karein
-.
+# ☁️ AWS Crash Course (5-Day Roadmap)
 
-#Day 3: Databases aur Networking
-Databases: Relational database ke liye RDS aur Aurora dekhein
-. Non-relational (NoSQL) ke liye DynamoDB flagship service hai
-. Analytics ke liye Redshift aur caching ke liye ElastiCache zaroori hain
-.
-Networking: VPC (Virtual Private Cloud) aapka private network hai
-. CloudFront (CDN) aur Route 53 (DNS) ko content delivery ke liye samjhein
-.
-Direct Connect vs VPN: Dedicated connection aur secure tunnel ke beech ka difference yaad rakhein
-.
+> 🎯 **Goal:** Complete AWS fundamentals in **5 days** and prepare for the AWS Cloud Practitioner (CLF-C02) exam.
 
-#Day 4: Security aur Compliance
-Shared Responsibility Model: Ye exam ke liye bahut important hai—AWS "Security of the Cloud" ke liye responsible hai aur aap "Security in the Cloud" ke liye
-.
-IAM (Identity and Access Management): Users, Groups, Policies, aur Roles manage karna seekhein
-. Root user par hamesha MFA enable karein
-.
-Security Services: Shield (DDoS protection), WAF (Web Application Firewall), aur GuardDuty (Intrusion detection) ke baare mein padhein
-.
+---
 
-#Day 5: Billing, Support, aur Review
-Billing Tools: AWS Budgets, Cost Explorer, aur Pricing Calculator ka use samjhein
-.
-Support Plans: Basic, Developer, Business, aur Enterprise plans ke differences yaad karein
-. TAM (Technical Account Manager) sirf Enterprise tier par milta hai
-.
-Final Review: AWS Trusted Advisor ke 5 categories ko check karein aur Well-Architected Framework ke pillars ko review karein
-.
-Practice Exam: Exam dene se pehle ExamPro.co par free practice exam zaroor dein
-.
+## 📚 Course Roadmap
+
+```mermaid
+flowchart LR
+    A[Day 1<br>Cloud Concepts] --> B[Day 2<br>Compute & Storage]
+    B --> C[Day 3<br>Databases & Networking]
+    C --> D[Day 4<br>Security]
+    D --> E[Day 5<br>Billing & Review]
+```
+
+---
+
+# 📅 Day 1 — Cloud Concepts & Global Infrastructure
+
+## 🎯 Topics Covered
+
+- ☁️ What is Cloud Computing?
+- 🏢 On-Premises vs Cloud
+- 🌍 AWS Global Infrastructure
+- 🌐 Regions & Availability Zones (AZs)
+- 🚀 Benefits of Cloud
+
+---
+
+## Cloud Deployment Models
+
+| Model | Description | Example |
+|--------|-------------|----------|
+| 🌍 Public Cloud | Infrastructure managed by AWS | AWS |
+| 🏢 Private Cloud | Dedicated infrastructure | Company Datacenter |
+| 🔀 Hybrid Cloud | Mix of Public + Private | AWS + Local Servers |
+| ☁️ Multicloud | Multiple Cloud Providers | AWS + Azure + GCP |
+
+---
+
+## AWS Global Infrastructure
+
+```text
+AWS Region
+│
+├── Availability Zone A
+├── Availability Zone B
+└── Availability Zone C
+```
+
+💡 **Remember**
+
+- Every Region has multiple AZs.
+- AZs are isolated but connected.
+- **US-East-1** is the oldest and most popular AWS Region.
+
+---
+
+## 🌟 Benefits of Cloud
+
+- ⚡ Agility
+- 💰 Cost Effective
+- 📈 Scalability
+- 🌍 Global Reach
+- 🔒 Security
+- 🤖 Automation
+- 💾 Reliability
+
+---
+
+# 📅 Day 2 — Compute & Storage
+
+## 💻 Compute Services
+
+| Service | Use Case |
+|----------|----------|
+| EC2 | Virtual Machine |
+| Lambda | Serverless Computing |
+| ECS | Docker Containers |
+| EKS | Kubernetes |
+
+---
+
+## Storage Services
+
+| Service | Best For |
+|----------|-----------|
+| S3 | Object Storage |
+| EBS | Virtual Hard Disk |
+| EFS | Shared File Storage |
+
+---
+
+### Storage Decision
+
+```mermaid
+flowchart TD
+A[Need Storage?]
+A --> B[Files]
+A --> C[Virtual Disk]
+A --> D[Shared Files]
+
+B --> S3[S3]
+C --> EBS[EBS]
+D --> EFS[EFS]
+```
+
+---
+
+## Hands-on
+
+✅ Create an S3 Bucket
+
+✅ Upload Files
+
+✅ Delete Files
+
+---
+
+# 📅 Day 3 — Databases & Networking
+
+## Database Services
+
+| Service | Type |
+|----------|------|
+| RDS | Relational Database |
+| Aurora | High Performance SQL |
+| DynamoDB | NoSQL |
+| Redshift | Data Warehouse |
+| ElastiCache | Caching |
+
+---
+
+## Networking
+
+| Service | Purpose |
+|----------|----------|
+| VPC | Private Network |
+| Route 53 | DNS |
+| CloudFront | CDN |
+
+---
+
+## Direct Connect vs VPN
+
+| Direct Connect | VPN |
+|----------------|-----|
+| Dedicated Connection | Internet Tunnel |
+| Faster | Cheaper |
+| More Reliable | Easy Setup |
+
+---
+
+## AWS Networking
+
+```text
+Internet
+     │
+ Route 53
+     │
+CloudFront
+     │
+   VPC
+     │
+EC2 / RDS / Lambda
+```
+
+---
+
+# 📅 Day 4 — Security & Compliance
+
+## Shared Responsibility Model
+
+```mermaid
+graph LR
+A[AWS Responsibility]
+B[Customer Responsibility]
+
+A --> A1[Hardware]
+A --> A2[Networking]
+A --> A3[Physical Security]
+
+B --> B1[Data]
+B --> B2[IAM]
+B --> B3[Applications]
+B --> B4[Operating System]
+```
+
+---
+
+## IAM
+
+IAM Components
+
+- 👤 Users
+- 👥 Groups
+- 📜 Policies
+- 🎭 Roles
+
+---
+
+## Security Best Practices
+
+✅ Enable MFA on Root User
+
+✅ Follow Least Privilege
+
+✅ Rotate Credentials
+
+---
+
+## Security Services
+
+| Service | Purpose |
+|----------|----------|
+| Shield | DDoS Protection |
+| WAF | Web Application Firewall |
+| GuardDuty | Threat Detection |
+
+---
+
+# 📅 Day 5 — Billing, Support & Review
+
+## Billing Tools
+
+| Tool | Purpose |
+|------|----------|
+| Cost Explorer | Analyse Spending |
+| AWS Budgets | Set Budget Alerts |
+| Pricing Calculator | Estimate Costs |
+
+---
+
+## Support Plans
+
+| Plan | Best For |
+|------|-----------|
+| Basic | Free |
+| Developer | Learning |
+| Business | Companies |
+| Enterprise | Large Organisations |
+
+⭐ **Only Enterprise includes a Technical Account Manager (TAM).**
+
+---
+
+## AWS Trusted Advisor
+
+- 💰 Cost Optimisation
+- 🔐 Security
+- ⚙️ Performance
+- 🛡️ Fault Tolerance
+- 📊 Service Limits
+
+---
+
+## Well-Architected Framework
+
+```text
+Operational Excellence
+        │
+Security
+        │
+Reliability
+        │
+Performance Efficiency
+        │
+Cost Optimisation
+        │
+Sustainability
+```
+
+---
+
+# 📝 Final Checklist
+
+- [ ] Cloud Concepts
+- [ ] EC2
+- [ ] Lambda
+- [ ] S3
+- [ ] EBS
+- [ ] EFS
+- [ ] RDS
+- [ ] DynamoDB
+- [ ] VPC
+- [ ] Route 53
+- [ ] CloudFront
+- [ ] IAM
+- [ ] Shared Responsibility
+- [ ] Billing Tools
+- [ ] Trusted Advisor
+- [ ] Well-Architected Framework
+
+---
+
+# 🎯 Exam Tips
+
+✅ Learn service use cases instead of memorising names.
+
+✅ Practise creating an S3 bucket.
+
+✅ Remember the Shared Responsibility Model.
+
+✅ Understand the differences between EC2, Lambda, ECS, and EKS.
+
+✅ Know which storage service fits each scenario.
+
+---
+
+# 📖 Quick Revision
+
+```mermaid
+mindmap
+  root((AWS))
+    Cloud
+      Public
+      Private
+      Hybrid
+      Multicloud
+    Compute
+      EC2
+      Lambda
+      ECS
+      EKS
+    Storage
+      S3
+      EBS
+      EFS
+    Database
+      RDS
+      Aurora
+      DynamoDB
+      Redshift
+    Network
+      VPC
+      Route53
+      CloudFront
+    Security
+      IAM
+      Shield
+      WAF
+      GuardDuty
+    Billing
+      Budgets
+      Cost Explorer
+      Pricing Calculator
+```
+
+---
+
+# 📚 Practice
+
+👉 Take a free AWS Cloud Practitioner practice test before the real exam.
+
+---
+
+## ⭐ Keep Learning
+
+> **"Don't memorise AWS services—understand when and why to use them."**
+
+---
+
+Made with ❤️ for AWS Cloud Practitioner Preparation.
