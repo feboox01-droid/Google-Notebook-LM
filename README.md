@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="./assets/aws-banner.png" alt="AWS Banner" width="100%">
+  <img src="assets/aws-banner.png" width="100%" alt="AWS Banner">
 </p>
+
+<h1 align="center">☁️ AWS Cloud Practitioner Crash Course</h1>
 
 <p align="center">
 A beginner-friendly <b>5-Day AWS Crash Course</b> covering the most important AWS services, cloud fundamentals, security concepts, networking, storage, databases, billing, and exam preparation.
