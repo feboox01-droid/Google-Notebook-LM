@@ -1,8 +1,4 @@
 
-<p align="center">
-  <img src="assets/aws-banner.png" width="100%">
-</p>
-
 # ☁️ AWS Crash Course (5-Day Roadmap)
 
 > 🎯 **Goal:** Complete AWS fundamentals in **5 days** and prepare for the AWS Cloud Practitioner (CLF-C02) exam.
