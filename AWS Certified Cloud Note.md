@@ -1,5 +1,7 @@
-assets/aws-architecture.png
 
+<p align="center">
+  <img src="assets/aws-banner.png" width="100%">
+</p>
 
 # ☁️ AWS Crash Course (5-Day Roadmap)
 
