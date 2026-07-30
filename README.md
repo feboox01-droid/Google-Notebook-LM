@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/aws-banner.png" width="100%" alt="AWS Banner">
+  <img src="aws-banner.png" alt="AWS Banner" width="100%">
 </p>
 
 <h1 align="center">☁️ AWS Cloud Practitioner </h1>
