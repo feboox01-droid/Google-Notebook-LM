@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="AWS%20Developer%20Center%20for%20PHP.jpg" width="100%" alt="AWS Banner">
+  <img src="./AWS%20Developer%20Center%20for%20PHP.jpg" alt="AWS Banner" width="100%">
 </p>
 
 <h1 align="center">☁️ AWS Cloud Practitioner </h1>
